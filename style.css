@@ -1,0 +1,371 @@
+:root{
+    --primary : #ff555d;
+    --secondary : #26282b;
+    --neutral : #eaeaea ;
+    --box-shadow: 10px 10px 16px #bebebe, -10px -10px 16px #ffff;
+    --inset-shadow: inset 10px 10px 16px #bebebedb, inset -10px -10px 16px #ffffffcd;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100wh;
+    height: 100vh;
+    background-color: var(--neutral);
+}
+
+.container{
+    position: relative;
+    width: 70rem;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral);
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+}
+
+.history{
+    position: absolute;
+    top: 22%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background-color: var(--neutral);
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.history.active{
+    display: flex;
+}
+
+.history .title{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.history .listHistory{
+    width: 90%;
+    height: 80%;
+    background-color: var(--neutral);
+    box-shadow: var(--inset-shadow);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+.date{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.card{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    border-radius: 12px;
+}
+.head{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+}
+.title{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first{
+    width: 3.5rem;
+    height: 4rem;
+    background: var(--primary);
+    box-shadow: var(--box-shadow);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first .second{
+    width: 1.5rem;
+    height: 3.5rem;
+    background: var(--neutral);
+    border-radius: 100%;
+    box-shadow: var(--inset-shadow);
+}
+input{
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    border: none;
+    padding-left: 10px;
+}
+.todoItem{
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    background: var(--neutral);
+    outline: none;
+    font-weight: 400;
+}
+.order{
+    width: 20%;
+    height: 70%;
+    background: var(--neutral);
+    color: var(--secondary);
+    box-shadow: var(--box-shadow);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 10px;
+}
+.order option{
+    background: var(--neutral);
+    margin: 5px;
+    box-shadow: var(--box-shadow);
+     border: none;
+     outline: none;
+     border-radius: 10px;
+     font-weight: 500;
+     padding: 10px;
+}
+.btns{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.addBtn{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #ff555dd4;
+    color: var(--secondary);
+    box-shadow: var(--box-shadow);
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    font-weight: 500;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addBtn:active{
+    box-shadow: var(--inset-shadow);
+}
+.historyBtn{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: cornflowerblue;
+    color: var(--secondary);
+    box-shadow: var(--box-shadow);
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    font-weight: 500;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.historyBtn:active{
+    box-shadow: var(--inset-shadow);
+}
+.circlekBtn{
+    width: 2.5rem;
+    height: 2.5rem;
+   background-color: aquamarine;
+    color: var(--secondary);
+    box-shadow: var(--box-shadow);
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    font-weight: 500;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circlekBtn:active{
+    box-shadow: var(--inset-shadow);
+}
+
+
+#todoList{
+    width: 100%;
+    height: 80%;
+    border-radius: 12px;
+    background-color: var(--neutral);
+    box-shadow: var(--inset-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+.itemList{
+    width: 95%;
+    height: 50px;
+    background-color: var(--neutral);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.itemList .checkBtn{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: var(--inset-shadow);
+    border: none;
+    outline: none;
+}
+.itemList .checkBtn:checked{
+    box-shadow: var(--box-shadow);
+}
+.itemList p{
+    width: 5rem;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    padding-left: 16px;
+}
+.type{
+    width: 2rem;
+    height: 40%;
+    outline: none;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+#urgent{
+    background-color: #ff555d6e;
+}
+#normal{
+    background-color: rgba(255, 255, 0, 0.455);
+}
+#basique{
+    background-color: #b055ff6e;
+}
+
+.itemList .opt{
+    width: 4rem;
+    height: 70%;
+    background: transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opt .deleteBtn{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    color: var(--secondary);
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+.opt .deleteBtn:active{
+    box-shadow: var(--inset-shadow);
+}
+.p{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.p span{
+    color: var(--primary);
+    font-weight: 600;
+}
+@media (max-width: 785px) {
+    .container{
+        width: 90%;
+        height: 90%;
+    }
+        .history{
+            top: 37%;
+            left: 5%;
+            width: 90%;
+            height: 55%;
+        }
+    .title{
+        width: 3rem;
+        height: 3rem;
+    }
+    .title .p{
+        width: 80%;
+        height: 50%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+    }
+    .title .first{
+        display: none;
+    }
+    .head{
+        height: 40%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .todoItem{
+        width: 80%;
+        height: 20%;
+    }
+    .order{
+        width: 50%;
+        height: 20%;
+        text-align: center;
+    }
+    .btns{
+        width: 60%;
+        height: 20%;
+    }
+}
