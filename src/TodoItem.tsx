@@ -1,6 +1,6 @@
 import { Trash } from "lucide-react";
 
-type Priority = "Urgente" | "Moyenne" | "Base";
+type Priority = "Urgente" | "Moyenne" | "Basse";
     
 type Todo = {
     id: number;
