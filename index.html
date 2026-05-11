@@ -1,43 +1,13 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClassicTodoList</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section class="container">
-        <section class="history">
-            <section class="title">Historique</section>
-            <section class="listHistory"></section>
-        </section>
-        <section class="card">
-            <section class="head">
-                <div class="title">
-                    <div class="p">todo<span>List</span></div>
-                    <section class="first">
-                        <section class="second"></section>
-                    </section>
-                </div>
-                <input type="text" class="todoItem" placeholder="Add a new todo...">
-                <select name="order" class="order" id="order">
-                    <option value="Urgent">Urgent</option>
-                    <option value="Normal">Normal</option>
-                    <option value="Basique">Basique</option>
-                </select>
-                <section class="btns">
-                     <button type="submit" class="addBtn" id="addBtn" onclick="addTodo()"><i data-lucide="plus"></i></button>
-                <button type="button" id="validBtn" class="circlekBtn"><i data-lucide="circle-check-big"></i></button>
-                <button type="button" id="historyBtn" class="historyBtn"><i data-lucide="history"></i></button>
-                </section>
-            </section>
-            <section id="todoList"></section>
-        </section>
-    </section>
-
-     <script src="https://unpkg.com/lucide@latest"></script>
-   
-    <script src="./script.js"></script>
-</body>
+<!doctype html>
+<html lang="en" data-theme="night">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todolist</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
